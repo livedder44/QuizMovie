@@ -73,11 +73,16 @@ h2 {
 
 
 @media (max-width: 480px) {
-.option-item {
+    .option-item {
   
         padding: 16px 16px;
 
     }
+    h2 { 
+    margin-bottom: 24px;
+    }
 
-
+    .option-list {
+        row-gap: 16px;
+    }
 }

@@ -31,3 +31,10 @@
       cursor: not-allowed;
     }
   }
+
+@media (max-width: 480px) {
+    .button-continue {
+        margin: 64px 0 80px 0 16px;
+    }
+}
+  
