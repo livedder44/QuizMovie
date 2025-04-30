@@ -1,0 +1,22 @@
+.button-back {
+  background: url(../assets/img/button-back.svg);
+  border: none;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  transition: opacity 0.3s, background-color 0.3s;
+  opacity: 0.1;
+      &:hover {
+          opacity: 1;
+        }
+      
+        &:focus,
+        :focus-visible {
+          outline: none;
+        }
+      
+        &.is-active {
+          opacity: 1;
+        }
+}

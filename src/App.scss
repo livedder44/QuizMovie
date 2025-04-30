@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url('./assets/Fonts/NotoSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-Black';
+  src: url('./assets/Fonts/NotoSans-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotoSans-SemiBold';
+  src: url('./assets/Fonts/NotoSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'NotoSans-Black';
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h2 {
+  font-family: 'NotoSans-Black';
+  font-size: 24px;
+  line-height: 30px;
+}
+
+#root {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 120px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  justify-content: space-evenly;
+  font-family: 'NotoSans-Regular', sans-serif;
+
+}
+
+
+
+.nav-bg {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 768px; 
+  background: url(../assets/img/background.svg) no-repeat center top / cover;
+  background-size: 100%;
+  z-index: 10;
+  padding: 0 120px 20px;
+}
+.nav-bg + * {
+  margin-top: 80px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow-y: auto;
+  
+}
+.navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0 24px 0;
+  row-gap: 15px;
+  
+  
+  max-width: 528px;
+  width: 100%;
+
+  box-sizing: border-box;
+
+
+}
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.burger-container {
+  display: flex;
+  column-gap: 16px;
+  align-items: center;
+}
+
+
+
+@media (max-width: 480px) {
+  #root {
+     padding: 0 40px;
+  }
+  .nav-bg {
+    background-size: auto;
+    padding: 0;
+  }
+  .navigation{
+    padding: 16px 40px 60px 40px;
+  }
+
+
+}

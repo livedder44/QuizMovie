@@ -1,0 +1,35 @@
+@import "./Variables.scss";
+
+.movie-search-input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 24px;
+    border-radius: 8px;
+    border: 2px solid $color-border-default;
+    transition: border-color 0.3s; 
+    margin-bottom: 8px;
+
+    &:focus {
+        border-color: $color-accent;
+        outline: none;
+    }
+
+    &.error {
+        border-color: $color-error;
+    }
+}
+
+.error-message {
+    color: $color-error;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.error-text {
+    color: $color-error;
+    display: none;
+
+    &.visible {
+            display: block;
+    }
+}

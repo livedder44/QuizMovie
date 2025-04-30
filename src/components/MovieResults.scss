@@ -1,0 +1,57 @@
+@import "./Variables.scss";
+
+.movie-results{
+  justify-content: normal;
+}
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 62px 112px;
+  text-align: center;
+  border-bottom: 1px solid $color-border-default;
+}
+
+.movie-card:last-child {
+  border: none;
+}
+
+.movie-card > img {
+  border-radius: 16px;
+  margin-bottom: 40px;
+}
+
+.movie-card > h1 {
+  margin: 0 0 8px 0;
+}
+
+.no-results,  .no-results>h2{
+  text-align: center;
+}
+
+.no-results > div {
+  font-size: 135px;
+}
+
+.no-results > h2 {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.no-results+.buttons-container>.button-continue {
+  display: none;
+}
+
+@media (max-width: 480px) {
+.movie-card {
+   padding: 44px 48px;
+
+}
+.movie-card>img {
+  margin-bottom: 24px;
+}
+
+
+
+}
