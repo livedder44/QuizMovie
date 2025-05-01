@@ -71,7 +71,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  overflow-y: auto;
+  // overflow-y: auto;
   
 }
 .navigation {
@@ -99,7 +99,9 @@ h2 {
   column-gap: 16px;
   align-items: center;
 }
-
+.buttons-container {
+  position: relative;
+}
 
 
 @media (max-width: 480px) {
